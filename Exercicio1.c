@@ -16,7 +16,7 @@ int main(){
 		controle = scanf("%d",&numero);	
 		
 		if (cont1 > 4){
-			cont1 = 0;
+			cont1 = 0; 
 			printf("Realocou %d\n", cont2 + 5);
 			int * Vetor = (int *) realloc (Vetor,(cont2 + 5)* sizeof(int));
 		}
