@@ -5,7 +5,7 @@ typedef struct Elemento{ //Estrutura para cada elemento do conjunto {1,2,3...}
 	int info;
 	struct Elemento * Prox;
 	struct Elemento * Prev;
-}Elemento;  
+}Elemento;
 
 typedef struct Conjunto{ //Estrutura para cada Conjunto 1{n1,n2,3...} 2{n1,n2,n3...}
 	int tamanho;
@@ -16,7 +16,7 @@ typedef struct Conjunto{ //Estrutura para cada Conjunto 1{n1,n2,3...} 2{n1,n2,n3
 	struct Conjunto * Prev;
 }Conjunto;
 
-typedef struct ListaDeConjunto{ //Estrutura para a Lista de Conjuntos 
+typedef struct ListaDeConjunto{ //Estrutura para a Lista de Conjuntos
 	int tamanhoLista;
 	struct Conjunto * inicioLista;
 	struct Conjunto * fimLista;
@@ -37,3 +37,5 @@ void ExcluirElemento_Question(Lista * lista);
 void AlterarElemento		(Lista * lista,	Conjunto * conjunto,int info);
 void AlterarElemento_Question(Lista * lista);
 void ExibirDiferenca		(Lista * lista);
+int toupper(int c);
+
